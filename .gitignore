@@ -1,0 +1,5 @@
+.DS_Store
+*.bak
+.idea/
+node_modules/
+*.log

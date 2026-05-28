@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Présentation CLIL sur l'Amphithéâtre Romain d'Aoste - Augusta Praetoria Salassorum.">
+    <title>L'Amphithéâtre Romain d'Aoste — Projet CLIL</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Inter:wght@300;400;500;600;700&family=Cinzel:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style(fr).css">
+</head>
+<body>
+    <!-- ===== NAVIGATION ===== -->
+    <nav id="main-nav">
+        <div class="nav-brand">
+            <span class="nav-icon"></span>
+            <span class="nav-title">Amphithéâtre d'Aoste</span>
+        </div>
+        <div class="nav-links">
+            <a href="#hero" class="nav-link active">Accueil</a>
+            <a href="#bloc1" class="nav-link">Accroche</a>
+            <a href="#bloc2" class="nav-link">Histoire</a>
+            <a href="#bloc3" class="nav-link">Architecture</a>
+            <a href="#bloc4" class="nav-link">Évolution</a>
+            <a href="#quiz-section" class="nav-link nav-quiz">Quiz</a>
+            <a href="#share-section" class="nav-link">Partager</a>
+        </div>
+        <button id="mobile-menu-btn" class="mobile-menu-btn" aria-label="Menu">
+            <span></span><span></span><span></span>
+        </button>
+    </nav>
+    <!-- ===== HERO SECTION ===== -->
+    <header id="hero" class="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="hero-particles" id="hero-particles"></div>
+        <div class="hero-content">
+            <div class="hero-badge">Projet CLIL — Iyed Aidi et Sebastian Roux</div>
+            <h1 class="hero-title">
+                <span class="hero-title-line">L'Amphithéâtre</span>
+                <span class="hero-title-line hero-title-accent">Romain d'Aoste</span>
+            </h1>
+            <p class="hero-subtitle">Augusta Praetoria Salassorum — Ier siècle apr. J.-C.</p>
+            <div class="hero-stats">
+                <div class="stat-card">
+                    <span class="stat-number" data-target="15000">0</span>
+                    <span class="stat-label">Spectateurs</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number" data-target="60">0</span>
+                    <span class="stat-label">Arcs</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number" data-target="86">0</span>
+                    <span class="stat-label">Mètres</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number" data-target="2000">0</span>
+                    <span class="stat-label">Ans d'histoire</span>
+                </div>
+            </div>
+            <a href="#bloc1" class="hero-cta">
+                <span>Découvrir l'histoire</span>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+            </a>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-mouse">
+                <div class="scroll-dot"></div>
+            </div>
+        </div>
+    </header>
+    <!-- ===== BLOC 1: L'ACCROCHE ===== -->
+    <section id="bloc1" class="section bloc-section">
+        <div class="section-header">
+            <div class="bloc-number">Bloc 1</div>
+            <h2 class="section-title">L'Accroche</h2>
+            <p class="section-subtitle">« Bienvenue devant l'un des secrets les mieux gardés des Alpes… »</p>
+        </div>
+        <div class="content-grid accroche-grid">
+            <div class="content-card glass-card reveal-left">
+                <div class="card-icon"></div>
+                <h3>Le saviez-vous ?</h3>
+                <p>L'amphithéâtre romain d'Aoste est <strong>caché à l'intérieur d'un couvent</strong>. Contrairement au Colisée de Rome ou à l'amphithéâtre de Nîmes, ses vestiges sont englobés dans les murs du <em>couvent des sœurs de Saint-Joseph</em>.</p>
+                <p>Pour le visiter, il faut <strong>sonner à la porte du couvent</strong> et demander la permission aux religieuses !</p>
+            </div>
+            <div class="content-card image-card reveal-up">
+                <img src="amphitheatre_aoste0.png" alt="L'Amphithéâtre Romain d'Aoste avec les Alpes en arrière-plan" loading="lazy">
+                <div class="image-caption">Vue de l'amphithéâtre avec les Alpes majestueuses</div>
+            </div>
+            <div class="content-card glass-card reveal-right">
+                <div class="card-icon"></div>
+                <h3>Localisation</h3>
+                <p>L'amphithéâtre se trouve au cœur du <strong>centre historique d'Aoste</strong>, Via Anfiteatro, dans le secteur nord-est de l'ancienne cité romaine d'<em>Augusta Praetoria Salassorum</em>, en Vallée d'Aoste, Italie.</p>
+                <div class="highlight-box">
+                    <span class="highlight-icon"></span>
+                    <span>Avec <strong>15 000 places</strong> pour une ville de 3 000 habitants, il pouvait accueillir <strong>5 fois la population</strong> de la cité !</span>
+                </div>
+            </div>
+        </div>
+        <div class="accroche-anecdote reveal-up">
+            <div class="anecdote-icon"></div>
+            <blockquote>
+                « Là où des gladiateurs combattaient il y a 2 000 ans poussent aujourd'hui des pommiers et des poiriers dans le tranquille verger des sœurs de Saint-Joseph. »
+            </blockquote>
+        </div>
+    </section>
+    <!-- ===== BLOC 2: LE CONTEXTE HISTORIQUE ===== -->
+    <section id="bloc2" class="section bloc-section dark-section">
+        <div class="section-header">
+            <div class="bloc-number">Bloc 2</div>
+            <h2 class="section-title">Le Contexte Historique</h2>
+            <p class="section-subtitle">Comprendre le pourquoi des investissements romains</p>
+        </div>
+        <!-- Timeline -->
+        <div class="timeline">
+            <div class="timeline-item reveal-left">
+                <div class="timeline-date">Avant 25 av. J.-C.</div>
+                <div class="timeline-content">
+                    <h3> Les Salasses</h3>
+                    <p>Les <strong>Salasses</strong> (Salassi), un peuple celte, occupaient la vallée d'Aoste. Ils contrôlaient les <strong>passages alpins stratégiques</strong> et imposaient des rançons aux voyageurs et aux troupes romaines qui tentaient de franchir les Alpes.</p>
+                </div>
+            </div>
+            <div class="timeline-item reveal-right">
+                <div class="timeline-date">25 av. J.-C.</div>
+                <div class="timeline-content">
+                    <h3> La Conquête</h3>
+                    <p>L'empereur <strong>Auguste</strong> chargea le général <strong>Aulus Terentius Varro Murena</strong> de soumettre les Salasses. La campagne fut brutale : entre <strong>36 000 et 44 000 Salasses</strong> furent capturés et vendus comme esclaves sur le marché d'Eporedia (Ivrée).</p>
+                </div>
+            </div>
+            <div class="timeline-item reveal-left">
+                <div class="timeline-date">24 av. J.-C.</div>
+                <div class="timeline-content">
+                    <h3> Fondation d'Augusta Praetoria</h3>
+                    <p>Sur l'emplacement du camp militaire, Auguste fit fonder la colonie d'<strong>Augusta Praetoria Salassorum</strong>, peuplée de <strong>3 000 vétérans prétoriens</strong>. La ville suivait un plan en damier (hippodamien) typique des colonies militaires romaines.</p>
+                </div>
+            </div>
+            <div class="timeline-item reveal-right">
+                <div class="timeline-date">Ier siècle apr. J.-C.</div>
+                <div class="timeline-content">
+                    <h3> Construction de l'Amphithéâtre</h3>
+                    <p>Sous la <strong>dynastie julio-claudienne</strong>, probablement sous l'empereur <strong>Claude</strong> (41-54 apr. J.-C.), l'amphithéâtre fut construit pour les <strong>combats de gladiateurs</strong> (munera) et les <strong>chasses d'animaux</strong> (venationes).</p>
+                </div>
+            </div>
+        </div>
+        <!-- Strategic Importance -->
+        <div class="strategic-box reveal-up">
+            <h3> L'Importance Stratégique d'Aoste</h3>
+            <div class="strategy-grid">
+                <div class="strategy-item">
+                    <div class="strategy-icon">⛰️</div>
+                    <h4>Col du Grand-Saint-Bernard</h4>
+                    <p><em>Alpis Poenina</em> — Vers la Gaule et la Germanie</p>
+                </div>
+                <div class="strategy-item">
+                    <div class="strategy-icon"></div>
+                    <h4>Col du Petit-Saint-Bernard</h4>
+                    <p><em>Alpis Graia</em> — Vers la Gaule (Lyon)</p>
+                </div>
+                <div class="strategy-item">
+                    <div class="strategy-icon"></div>
+                    <h4>Pivot Militaire</h4>
+                    <p>Contrôle des flux de troupes, de marchandises et de communications entre l'Italie et le monde gaulois</p>
+                </div>
+            </div>
+        </div>
+        <div class="lexique-box reveal-up">
+            <h4> Lexique Exigé — Bloc 2</h4>
+            <div class="lexique-tags">
+                <span class="tag">« en raison de »</span>
+                <span class="tag">« afin de »</span>
+                <span class="tag">« par conséquent »</span>
+                <span class="tag">Passé Composé</span>
+                <span class="tag">Imparfait</span>
+            </div>
+        </div>
+    </section>
+    <!-- ===== BLOC 3: L'ANALYSE TECHNIQUE ===== -->
+    <section id="bloc3" class="section bloc-section">
+        <div class="section-header">
+            <div class="bloc-number">Bloc 3</div>
+            <h2 class="section-title">L'Analyse Technique</h2>
+            <p class="section-subtitle">Le génie civil antique et les matériaux locaux</p>
+        </div>
+        <div class="tech-grid">
+            <div class="tech-card reveal-left">
+                <img src="amphitheatre_aerial2.png" alt="Reconstitution aérienne de l'amphithéâtre et Augusta Praetoria" loading="lazy">
+                <div class="tech-card-overlay">
+                    <span>Reconstitution d'Augusta Praetoria</span>
+                </div>
+            </div>
+            <div class="tech-specs reveal-right">
+                <h3> Dimensions & Caractéristiques</h3>
+                <div class="spec-table">
+                    <div class="spec-row">
+                        <span class="spec-label">Forme</span>
+                        <span class="spec-value">Elliptique</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Grand axe (N-S)</span>
+                        <span class="spec-value">~86 à 94,5 m</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Petit axe (E-O)</span>
+                        <span class="spec-value">~73 à 73,86 m</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Capacité</span>
+                        <span class="spec-value highlight">~15 000 spectateurs</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Arcs extérieurs</span>
+                        <span class="spec-value">60 arcs en plein cintre</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Niveaux</span>
+                        <span class="spec-value">2 étages d'arcades</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Matériau</span>
+                        <span class="spec-value">Bardiglio (marbre gris local)</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Époque</span>
+                        <span class="spec-value">Julio-claudienne (Ier s. apr. J.-C.)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Architecture Details -->
+        <div class="architecture-details">
+            <div class="arch-card reveal-up">
+                <img src="amphitheatre_detail3.png" alt="Détail des arcs en plein cintre et blocs de pierre" loading="lazy">
+            </div>
+            <div class="arch-features">
+                <div class="arch-feature reveal-left">
+                    <div class="feature-icon"></div>
+                    <div class="feature-content">
+                        <h4>Pierre de taille à bossage</h4>
+                        <p>Technique <em>(bugnato rustico)</em> caractéristique de l'époque julio-claudienne. Les blocs présentent une surface volontairement rugueuse, créant un effet décoratif puissant.</p>
+                    </div>
+                </div>
+                <div class="arch-feature reveal-left">
+                    <div class="feature-icon"></div>
+                    <div class="feature-content">
+                        <h4>Demi-colonnes toscanes</h4>
+                        <p>Des pilastres décoratifs d'<strong>ordre toscan</strong> encadraient chaque arc, caractéristiques de l'architecture romaine provinciale.</p>
+                    </div>
+                </div>
+                <div class="arch-feature reveal-left">
+                    <div class="feature-icon"></div>
+                    <div class="feature-content">
+                        <h4>Le Bardiglio</h4>
+                        <p>Un <strong>marbre gris local</strong> extrait près de Villeneuve, unique dans le monde romain. Ce matériau donnait à l'amphithéâtre un aspect distinct.</p>
+                    </div>
+                </div>
+                <div class="arch-feature reveal-left">
+                    <div class="feature-icon"></div>
+                    <div class="feature-content">
+                        <h4>La Cavea</h4>
+                        <p>Les gradins étaient divisés en trois zones : <strong>Ima cavea</strong> (élite), <strong>Media cavea</strong> (classe moyenne), et <strong>Summa cavea</strong> (peuple). La partie inférieure était adossée à un talus de terre.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="lexique-box reveal-up">
+            <h4> Vocabulaire Technique</h4>
+            <div class="lexique-tags">
+                <span class="tag">l'arc en plein cintre</span>
+                <span class="tag">les blocs de tuf</span>
+                <span class="tag">le mortier</span>
+                <span class="tag">les fondations</span>
+                <span class="tag">le rempart</span>
+                <span class="tag">la cavea</span>
+                <span class="tag">le bardiglio</span>
+            </div>
+        </div>
+    </section>
+    <!-- ===== BLOC 4: L'ÉVOLUTION ===== -->
+    <section id="bloc4" class="section bloc-section dark-section">
+        <div class="section-header">
+            <div class="bloc-number">Bloc 4</div>
+            <h2 class="section-title">L'Évolution</h2>
+            <p class="section-subtitle">Ce qu'il reste — Du passé au présent</p>
+        </div>
+        <div class="evolution-grid">
+            <div class="evolution-card reveal-left">
+                <div class="evolution-period">Moyen Âge</div>
+                <div class="evolution-icon"></div>
+                <h3>Carrière de matériaux</h3>
+                <p>Comme de nombreux monuments romains, l'amphithéâtre servit de <strong>carrière de pierres</strong>. Ses blocs furent récupérés pour la construction de palais, d'églises et de bâtiments civils dans la ville.</p>
+            </div>
+            <div class="evolution-card reveal-up">
+                <div class="evolution-period">Époque monastique</div>
+                <div class="evolution-icon"></div>
+                <h3>Le Couvent</h3>
+                <p>Un <strong>monastère de Sainte-Catherine</strong> fut construit en s'intégrant directement dans les structures restantes, contribuant paradoxalement à leur <strong>préservation</strong>. Il devint le couvent des sœurs de Saint-Joseph.</p>
+            </div>
+            <div class="evolution-card reveal-right">
+                <div class="evolution-period">Aujourd'hui</div>
+                <div class="evolution-icon"></div>
+                <h3>Monument National</h3>
+                <p>Il ne reste que <strong>8 arches du secteur nord-ouest</strong>, intégrées dans les murs du couvent. L'arène est occupée par un verger. Le site est classé <strong>monument national italien</strong>.</p>
+            </div>
+        </div>
+        <div class="palimpseste-box reveal-up">
+            <h3> Le Palimpseste Architectural</h3>
+            <div class="palimpseste-layers">
+                <div class="layer layer-roman">
+                    <span class="layer-label">Couche Romaine</span>
+                    <span class="layer-date">Ier siècle apr. J.-C.</span>
+                </div>
+                <div class="layer layer-medieval">
+                    <span class="layer-label">Couche Médiévale</span>
+                    <span class="layer-date">Ve - XIVe siècle</span>
+                </div>
+                <div class="layer layer-religious">
+                    <span class="layer-label">Couche Religieuse</span>
+                    <span class="layer-date">XVe siècle - Aujourd'hui</span>
+                </div>
+            </div>
+            <p class="palimpseste-text">L'amphithéâtre d'Aoste est un témoignage précieux de la superposition de couches historiques — un véritable <em>palimpseste architectural</em> où chaque époque a laissé sa trace.</p>
+        </div>
+        <div class="lexique-box reveal-up">
+            <h4> Lexique — Verbes de perception</h4>
+            <div class="lexique-tags">
+                <span class="tag">« Si vous observez attentivement… »</span>
+                <span class="tag">« Regardez de plus près… »</span>
+                <span class="tag">« Au sommet de… »</span>
+                <span class="tag">« Transformé en… au fil des siècles »</span>
+            </div>
+        </div>
+    </section>
+    <!-- ===== QUIZ SECTION ===== -->
+    <section id="quiz-section" class="section quiz-section">
+        <div class="section-header">
+            <div class="bloc-number"></div>
+            <h2 class="section-title">Quiz — Questionnaire</h2>
+            <p class="section-subtitle">Testez vos connaissances sur l'Amphithéâtre d'Aoste</p>
+        </div>
+        <div class="quiz-container">
+            <!-- Google Forms styled header -->
+            <div class="quiz-header">
+                <div class="quiz-header-stripe"></div>
+                <div class="quiz-header-content">
+                    <img src="https://inkline-edizioni.com/wp-content/uploads/2017/03/estr-2.jpg" alt="Amphithéâtre d'Aoste" class="quiz-header-image">
+                    <h2 class="quiz-form-title">Quiz : L'Amphithéâtre Romain d'Aoste</h2>
+                    <p class="quiz-form-desc">Ce questionnaire évalue vos connaissances sur l'amphithéâtre romain d'Aoste. Répondez à toutes les questions puis vérifiez vos résultats.</p>
+                    <div class="quiz-required-note">* Obligatoire</div>
+                </div>
+            </div>
+            <!-- Quiz Form -->
+            <form id="quiz-form">
+                <!-- Question 1 -->
+                <div class="quiz-question-card" data-question="1">
+                    <div class="question-number">Question 1 <span class="required">*</span></div>
+                    <p class="question-text">Quel était le nom romain de la ville d'Aoste ?</p>
+                    <div class="question-options">
+                        <label class="option-label">
+                            <input type="radio" name="q1" value="a">
+                            <span class="radio-custom"></span>
+                            <span class="option-text">Mediolanum</span>
+                        </label>
+                        <label class="option-label">
+                            <input type="radio" name="q1" value="b">
+                            <span class="radio-custom"></span>
+                            <span class="option-text">Augusta Praetoria Salassorum</span>
+                        </label>
+                        <label class="option-label">
+                            <input type="radio" name="q1" value="c">
+                            <span class="radio-custom"></span>
+                            <span class="option-text">Lutetia Parisiorum</span>
+                        </label>
+                        <label class="option-label">
+                            <input type="radio" name="q1" value="d">
+                            <span class="radio-custom"></span>
+                            <span class="option-text">Colonia Agrippina</span>
+                        </label>
+                    </div>
+                    <div class="question-feedback"></div>
+                </div>
+                <!-- Question 2 -->
+                <div class="quiz-question-card" data-question="2">
+                    <div class="question-number">Question 2 <span class="required">*</span></div>
+                    <p class="question-text">En quelle année la ville d'Aoste a-t-elle été fondée ?</p>
+                    <div class="question-options">
+                        <label class="option-label">
+                            <input type="radio" name="q2" value="a">
+                            <span class="radio-custom"></span>
+                            <span class="option-text">44 av. J.-C.</span>
+                        </label>
+                        <label class="option-label">
+                            <input type="radio" name="q2" value="b">
+                            <span class="radio-custom"></span>
+                            <span class="option-text">25 av. J.-C.</span>
+                        </label>
+                        <label class="option-label">
+                            <input type="radio" name="q2" value="c">
+                            <span class="radio-custom"></span>
+                            <span class="option-text">100 apr. J.-C.</span>
+                        </label>
+                        <label class="option-label">
+                            <input type="radio" name="q2" value="d">
+                            <span class="radio-custom"></span>
+                            <span class="option-text">476 apr. J.-C.</span>
+                        </label>
+                    </div>
+                    <div class="question-feedback"></div>
+                </div>
+                <!-- Question 3 -->
+                <div class="quiz-question-card" data-question="3">
+                    <div class="question-number">Question 3 <span class="required">*</span></div>
+                    <p class="question-text">Quel peuple occupait la vallée d'Aoste avant les Romains ?</p>
+                    <div class="question-options">
+                        <label class="option-label">
+                            <input type="radio" name="q3" value="a">
+                            <span class="radio-custom"></span>
+                            <span class="option-text">Les Gaulois</span>
+                        </label>
+                        <label class="option-label">
+                            <input type="radio" name="q3" value="b">
+                            <span class="radio-custom"></span>
+                            <span class="option-text">Les Étrusques</span>
+                        </label>
+                        <label class="option-label">
+                            <input type="radio" name="q3" value="c">
+                            <span class="radio-custom"></span>
+                            <span class="option-text">Les Salasses</span>
+                        </label>
+                        <label class="option-label">
+                            <input type="radio" name="q3" value="d">
+                            <span class="radio-custom"></span>
+                            <span class="option-text">Les Ligures</span>
+                        </label>
+                    </div>
+                    <div class="question-feedback"></div>
+                </div>
+                <!-- Question 4 -->
+                <div class="quiz-question-card" data-question="4">
+                    <div class="question-number">Question 4 <span class="required">*</span></div>
+                    <p class="question-text">Quelle était la capacité estimée de l'amphithéâtre ?</p>
+                    <div class="question-options">
+                        <label class="option-label">
+                            <input type="radio" name="q4" value="a">
+                            <span class="radio-custom"></span>
+                            <span class="option-text">5 000 spectateurs</span>
+                        </label>
+                        <label class="option-label">
+                            <input type="radio" name="q4" value="b">
+                            <span class="radio-custom"></span>
+                            <span class="option-text">15 000 spectateurs</span>
+                        </label>
+                        <label class="option-label">
+                            <input type="radio" name="q4" value="c">
+                            <span class="radio-custom"></span>
+                            <span class="option-text">50 000 spectateurs</span>
+                        </label>
+                        <label class="option-label">
+                            <input type="radio" name="q4" value="d">
+                            <span class="radio-custom"></span>
+                            <span class="option-text">80 000 spectateurs</span>
+                        </label>
+                    </div>
+                    <div class="question-feedback"></div>
+                </div>
+                <!-- Question 5 -->
+                <div class="quiz-question-card" data-question="5">
+                    <div class="question-number">Question 5 <span class="required">*</span></div>
+                    <p class="question-text">Quel matériau principal a été utilisé pour construire l'amphithéâtre ?</p>
+                    <div class="question-options">
+                        <label class="option-label">
+                            <input type="radio" name="q5" value="a">
+                            <span class="radio-custom"></span>
+                            <span class="option-text">Le travertin</span>
+                        </label>
+                        <label class="option-label">
+                            <input type="radio" name="q5" value="b">
+                            <span class="radio-custom"></span>
+                            <span class="option-text">Le bardiglio (marbre gris local)</span>
+                        </label>
+                        <label class="option-label">
+                            <input type="radio" name="q5" value="c">
+                            <span class="radio-custom"></span>
+                            <span class="option-text">Le marbre de Carrare</span>
+                        </label>
+                        <label class="option-label">
+                            <input type="radio" name="q5" value="d">
+                            <span class="radio-custom"></span>
+                            <span class="option-text">Le béton</span>
+                        </label>
+                    </div>
+                    <div class="question-feedback"></div>
+                </div>
+                <!-- Question 6 -->
+                <div class="quiz-question-card" data-question="6">
+                    <div class="question-number">Question 6 <span class="required">*</span></div>
+                    <p class="question-text">Combien d'arcs en plein cintre formaient la façade extérieure ?</p>
+                    <div class="question-options">
+                        <label class="option-label">
+                            <input type="radio" name="q6" value="a">
+                            <span class="radio-custom"></span>
+                            <span class="option-text">30 arcs</span>
+                        </label>
+                        <label class="option-label">
+                            <input type="radio" name="q6" value="b">
+                            <span class="radio-custom"></span>
+                            <span class="option-text">60 arcs</span>
+                        </label>
+                        <label class="option-label">
+                            <input type="radio" name="q6" value="c">
+                            <span class="radio-custom"></span>
+                            <span class="option-text">80 arcs</span>
+                        </label>
+                        <label class="option-label">
+                            <input type="radio" name="q6" value="d">
+                            <span class="radio-custom"></span>
+                            <span class="option-text">120 arcs</span>
+                        </label>
+                    </div>
+                    <div class="question-feedback"></div>
+                </div>
+                <!-- Question 7 -->
+                <div class="quiz-question-card" data-question="7">
+                    <div class="question-number">Question 7 <span class="required">*</span></div>
+                    <p class="question-text">Quel col alpin stratégique était contrôlé par Aoste, menant vers la Gaule et la Germanie ?</p>
+                    <div class="question-options">
+                        <label class="option-label">
+                            <input type="radio" name="q7" value="a">
+                            <span class="radio-custom"></span>
+                            <span class="option-text">Le Col du Mont-Blanc</span>
+                        </label>
+                        <label class="option-label">
+                            <input type="radio" name="q7" value="b">
+                            <span class="radio-custom"></span>
+                            <span class="option-text">Le Col du Grand-Saint-Bernard</span>
+                        </label>
+                        <label class="option-label">
+                            <input type="radio" name="q7" value="c">
+                            <span class="radio-custom"></span>
+                            <span class="option-text">Le Col du Simplon</span>
+                        </label>
+                        <label class="option-label">
+                            <input type="radio" name="q7" value="d">
+                            <span class="radio-custom"></span>
+                            <span class="option-text">Le Col du Brenner</span>
+                        </label>
+                    </div>
+                    <div class="question-feedback"></div>
+                </div>
+                <!-- Question 8 -->
+                <div class="quiz-question-card" data-question="8">
+                    <div class="question-number">Question 8 <span class="required">*</span></div>
+                    <p class="question-text">Que trouve-t-on aujourd'hui dans l'arène de l'amphithéâtre ?</p>
+                    <div class="question-options">
+                        <label class="option-label">
+                            <input type="radio" name="q8" value="a">
+                            <span class="radio-custom"></span>
+                            <span class="option-text">Un parking souterrain</span>
+                        </label>
+                        <label class="option-label">
+                            <input type="radio" name="q8" value="b">
+                            <span class="radio-custom"></span>
+                            <span class="option-text">Un verger (frutteto)</span>
+                        </label>
+                        <label class="option-label">
+                            <input type="radio" name="q8" value="c">
+                            <span class="radio-custom"></span>
+                            <span class="option-text">Un musée</span>
+                        </label>
+                        <label class="option-label">
+                            <input type="radio" name="q8" value="d">
+                            <span class="radio-custom"></span>
+                            <span class="option-text">Un stade de football</span>
+                        </label>
+                    </div>
+                    <div class="question-feedback"></div>
+                </div>
+                <!-- Question 9 -->
+                <div class="quiz-question-card" data-question="9">
+                    <div class="question-number">Question 9 <span class="required">*</span></div>
+                    <p class="question-text">Combien d'arches de l'amphithéâtre sont encore visibles aujourd'hui ?</p>
+                    <div class="question-options">
+                        <label class="option-label">
+                            <input type="radio" name="q9" value="a">
+                            <span class="radio-custom"></span>
+                            <span class="option-text">2 arches</span>
+                        </label>
+                        <label class="option-label">
+                            <input type="radio" name="q9" value="b">
+                            <span class="radio-custom"></span>
+                            <span class="option-text">8 arches</span>
+                        </label>
+                        <label class="option-label">
+                            <input type="radio" name="q9" value="c">
+                            <span class="radio-custom"></span>
+                            <span class="option-text">20 arches</span>
+                        </label>
+                        <label class="option-label">
+                            <input type="radio" name="q9" value="d">
+                            <span class="radio-custom"></span>
+                            <span class="option-text">40 arches</span>
+                        </label>
+                    </div>
+                    <div class="question-feedback"></div>
+                </div>
+                <!-- Question 10 -->
+                <div class="quiz-question-card" data-question="10">
+                    <div class="question-number">Question 10 <span class="required">*</span></div>
+                    <p class="question-text">Quels types de spectacles avaient lieu dans l'amphithéâtre ?</p>
+                    <div class="question-options">
+                        <label class="option-label">
+                            <input type="radio" name="q10" value="a">
+                            <span class="radio-custom"></span>
+                            <span class="option-text">Des pièces de théâtre et des comédies</span>
+                        </label>
+                        <label class="option-label">
+                            <input type="radio" name="q10" value="b">
+                            <span class="radio-custom"></span>
+                            <span class="option-text">Des combats de gladiateurs (munera) et des chasses d'animaux (venationes)</span>
+                        </label>
+                        <label class="option-label">
+                            <input type="radio" name="q10" value="c">
+                            <span class="radio-custom"></span>
+                            <span class="option-text">Des courses de chars</span>
+                        </label>
+                        <label class="option-label">
+                            <input type="radio" name="q10" value="d">
+                            <span class="radio-custom"></span>
+                            <span class="option-text">Des cérémonies religieuses uniquement</span>
+                        </label>
+                    </div>
+                    <div class="question-feedback"></div>
+                </div>
+                <!-- Submit Button -->
+                <div class="quiz-actions">
+                    <button type="submit" class="quiz-submit-btn" id="quiz-submit">Vérifier mes réponses</button>
+                    <button type="button" class="quiz-reset-btn" id="quiz-reset" style="display:none;">Recommencer le quiz</button>
+                </div>
+            </form>
+            <!-- Results -->
+            <div id="quiz-results" class="quiz-results" style="display:none;">
+                <div class="results-card">
+                    <div class="results-icon"></div>
+                    <h3>Vos Résultats</h3>
+                    <div class="results-score">
+                        <span id="score-value">0</span> / 10
+                    </div>
+                    <div class="results-bar">
+                        <div class="results-bar-fill" id="results-bar-fill"></div>
+                    </div>
+                    <p id="results-message" class="results-message"></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ===== QR CODE SECTION ===== -->
+    <section id="qr-section" class="section qr-section">
+        <div class="section-header">
+            <div class="bloc-number"></div>
+            <h2 class="section-title">QR Code — Accédez au Quiz</h2>
+            <p class="section-subtitle">Scannez le code pour accéder directement au questionnaire</p>
+        </div>
+        <div class="qr-container">
+            <div class="qr-card reveal-up">
+                <div class="qr-frame" id="qr-frame">
+                    <canvas id="qr-canvas" width="280" height="280" aria-label="QR code pour le quiz"></canvas>
+                </div>
+                <p class="qr-instruction">Scannez avec votre téléphone pour accéder au quiz</p>
+                <p id="qr-url" class="qr-url"></p>
+                <p id="qr-warning" class="qr-warning">⚠️ Si la page est ouverte localement depuis votre ordinateur, le QR Code ne fonctionnera pas sur un téléphone. Hébergez la page ou utilisez un serveur local accessible.</p>
+                <button id="download-qr" class="download-qr-btn">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+                    Télécharger le QR Code
+                </button>
+            </div>
+        </div>
+    </section>
+    <!-- ===== SHARE SECTION ===== -->
+    <section id="share-section" class="section share-section">
+        <div class="section-header">
+            <h2 class="section-title">Partager avec vos amis</h2>
+            <p class="section-subtitle">Envoyez ce lien ou scannez le code QR</p>
+        </div>
+        <div class="share-container">
+            <div class="share-link-card reveal-left">
+                <h3>Copier le lien</h3>
+                <div class="link-display">
+                    <input type="text" id="share-link" class="share-input" readonly>
+                    <button id="copy-link-btn" class="copy-btn">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 4h2a2 2 0 012 2v14a2 2 0 01-2 2H6a2 2 0 01-2-2V6a2 2 0 012-2h2"/><rect x="8" y="2" width="8" height="4" rx="1" ry="1"/></svg>
+                        Copier
+                    </button>
+                </div>
+                <p class="share-note">Partagez ce lien avec vos amis sur le meme reseau</p>
+            </div>
+            <div class="share-qr-card reveal-right">
+                <h3>Scannez le QR Code</h3>
+                <div class="share-qr-frame">
+                    <canvas id="share-qr-canvas" width="240" height="240"></canvas>
+                </div>
+                <button id="download-share-qr" class="download-share-qr-btn">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+                    Telecharger le QR
+                </button>
+            </div>
+        </div>
+    </section>
+    <!-- ===== FOOTER ===== -->
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <span class="footer-icon">🏛️</span>
+                <h3>L'Amphithéâtre Romain d'Aoste</h3>
+                <p>Projet CLIL —IYED AIDI ET SEBASTIAN ROUX</p>
+            </div>
+            <div class="footer-info">
+                <p>Augusta Praetoria Salassorum — Ier siècle apr. J.-C.</p>
+                <p class="footer-copy">© 2026 — Projet de Français</p>
+            </div>
+        </div>
+    </footer>
+    <!-- QR Code Library (qrcode-generator — fiable et légère) -->
+    <script src="https://cdn.jsdelivr.net/npm/qrcode-generator@1.4.4/qrcode.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
