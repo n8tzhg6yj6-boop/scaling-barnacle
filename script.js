@@ -140,6 +140,13 @@ function initQuiz() {
         q9: 'b',   // 8 arches
         q10: 'b'   // Combats de gladiateurs et chasses
     };
+    const questionCards = Array.from(form.querySelectorAll('.quiz-question-card'));
+    const totalQuestions = questionCards.length;
+    const activeAnswers = questionCards.reduce((acc, card) => {
+        const key = `q${card.dataset.question}`;
+        if (answers[key]) acc[key] = answers[key];
+        return acc;
+    }, {});
     const explanations = {
         q1: 'La ville romaine d\'Aoste s\'appelait Augusta Praetoria Salassorum, fondée en l\'honneur de l\'empereur Auguste.',
         q2: 'La ville a été fondée en 25-24 av. J.-C. après la conquête des Salasses par le général Aulus Terentius Varro Murena.',
@@ -157,7 +164,7 @@ function initQuiz() {
         let score = 0;
         let allAnswered = true;
         // Check each question
-        Object.keys(answers).forEach(q => {
+        Object.keys(activeAnswers).forEach(q => {
             const selected = form.querySelector(`input[name="${q}"]:checked`);
             const card = form.querySelector(`[data-question="${q.replace('q', '')}"]`);
             const feedback = card.querySelector('.question-feedback');
@@ -191,22 +198,24 @@ function initQuiz() {
         // Show results
         resultsDiv.style.display = 'block';
         const scoreValue = document.getElementById('score-value');
+        const scoreTotal = document.getElementById('score-total');
         const barFill = document.getElementById('results-bar-fill');
         const message = document.getElementById('results-message');
+        scoreTotal.textContent = totalQuestions;
         // Animate score
         animateScore(scoreValue, score);
         // Animate bar
         setTimeout(() => {
-            barFill.style.width = (score / 10 * 100) + '%';
+            barFill.style.width = (score / totalQuestions * 100) + '%';
         }, 300);
         // Message based on score
-        if (score === 10) {
+        if (score === totalQuestions) {
             message.textContent = '🎉 Parfait ! Vous êtes un expert de l\'amphithéâtre d\'Aoste ! Félicitations !';
             barFill.style.background = 'linear-gradient(90deg, #4caf50, #8bc34a, #cddc39)';
-        } else if (score >= 7) {
+        } else if (score >= Math.ceil(totalQuestions * 0.7)) {
             message.textContent = '👏 Très bien ! Vous avez de bonnes connaissances sur l\'amphithéâtre. Continuez comme ça !';
             barFill.style.background = 'linear-gradient(90deg, #673ab7, #9c27b0, #e040fb)';
-        } else if (score >= 5) {
+        } else if (score >= Math.ceil(totalQuestions * 0.5)) {
             message.textContent = '📚 Pas mal ! Mais il y a encore des choses à apprendre. Relisez la présentation !';
             barFill.style.background = 'linear-gradient(90deg, #ff9800, #ffc107)';
         } else {
