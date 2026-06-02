@@ -17,15 +17,6 @@
             <span class="nav-icon"></span>
             <span class="nav-title">Amphithéâtre d'Aoste</span>
         </div>
-        <div class="nav-links">
-            <a href="#hero" class="nav-link active">Accueil</a>
-            <a href="#bloc1" class="nav-link">Accroche</a>
-            <a href="#bloc2" class="nav-link">Histoire</a>
-            <a href="#bloc3" class="nav-link">Architecture</a>
-            <a href="#bloc4" class="nav-link">Évolution</a>
-            <a href="#quiz-section" class="nav-link nav-quiz">Quiz</a>
-            <a href="#share-section" class="nav-link">Partager</a>
-        </div>
         <button id="mobile-menu-btn" class="mobile-menu-btn" aria-label="Menu">
             <span></span><span></span><span></span>
         </button>
@@ -78,28 +69,29 @@
                 </div>
             </div>
             <!-- Quiz Form -->
+                <form id="quiz-form">
                 <!-- Question 1 -->
-                <div class="quiz-question-card" data-question="4">
-                    <div class="question-number">Question 4 <span class="required">*</span></div>
+                <div class="quiz-question-card" data-question="1">
+                    <div class="question-number">Question 1 <span class="required">*</span></div>
                     <p class="question-text">Quelle était la capacité estimée de l'amphithéâtre ?</p>
                     <div class="question-options">
                         <label class="option-label">
-                            <input type="radio" name="q4" value="a">
+                            <input type="radio" name="q1" value="a">
                             <span class="radio-custom"></span>
                             <span class="option-text">5 000 spectateurs</span>
                         </label>
                         <label class="option-label">
-                            <input type="radio" name="q4" value="b">
+                            <input type="radio" name="q1" value="b">
                             <span class="radio-custom"></span>
                             <span class="option-text">15 000 spectateurs</span>
                         </label>
                         <label class="option-label">
-                            <input type="radio" name="q4" value="c">
+                            <input type="radio" name="q1" value="c">
                             <span class="radio-custom"></span>
                             <span class="option-text">50 000 spectateurs</span>
                         </label>
                         <label class="option-label">
-                            <input type="radio" name="q4" value="d">
+                            <input type="radio" name="q1" value="d">
                             <span class="radio-custom"></span>
                             <span class="option-text">80 000 spectateurs</span>
                         </label>
@@ -107,27 +99,27 @@
                     <div class="question-feedback"></div>
                 </div>
                 <!-- Question 2 -->
-                <div class="quiz-question-card" data-question="5">
-                    <div class="question-number">Question 5 <span class="required">*</span></div>
+                <div class="quiz-question-card" data-question="2">
+                    <div class="question-number">Question 2 <span class="required">*</span></div>
                     <p class="question-text">Quel matériau principal a été utilisé pour construire l'amphithéâtre ?</p>
                     <div class="question-options">
                         <label class="option-label">
-                            <input type="radio" name="q5" value="a">
+                            <input type="radio" name="q2" value="a">
                             <span class="radio-custom"></span>
                             <span class="option-text">Le travertin</span>
                         </label>
                         <label class="option-label">
-                            <input type="radio" name="q5" value="b">
+                            <input type="radio" name="q2" value="b">
                             <span class="radio-custom"></span>
                             <span class="option-text">Le bardiglio (marbre gris local)</span>
                         </label>
                         <label class="option-label">
-                            <input type="radio" name="q5" value="c">
+                            <input type="radio" name="q2" value="c">
                             <span class="radio-custom"></span>
                             <span class="option-text">Le marbre de Carrare</span>
                         </label>
                         <label class="option-label">
-                            <input type="radio" name="q5" value="d">
+                            <input type="radio" name="q2" value="d">
                             <span class="radio-custom"></span>
                             <span class="option-text">Le béton</span>
                         </label>
@@ -135,27 +127,27 @@
                     <div class="question-feedback"></div>
                 </div>
                 <!-- Question 3 -->
-                <div class="quiz-question-card" data-question="6">
-                    <div class="question-number">Question 6 <span class="required">*</span></div>
+                <div class="quiz-question-card" data-question="3">
+                    <div class="question-number">Question 3 <span class="required">*</span></div>
                     <p class="question-text">Combien d'arcs en plein cintre formaient la façade extérieure ?</p>
                     <div class="question-options">
                         <label class="option-label">
-                            <input type="radio" name="q6" value="a">
+                            <input type="radio" name="q3" value="a">
                             <span class="radio-custom"></span>
                             <span class="option-text">30 arcs</span>
                         </label>
                         <label class="option-label">
-                            <input type="radio" name="q6" value="b">
+                            <input type="radio" name="q3" value="b">
                             <span class="radio-custom"></span>
                             <span class="option-text">60 arcs</span>
                         </label>
                         <label class="option-label">
-                            <input type="radio" name="q6" value="c">
+                            <input type="radio" name="q3" value="c">
                             <span class="radio-custom"></span>
                             <span class="option-text">80 arcs</span>
                         </label>
                         <label class="option-label">
-                            <input type="radio" name="q6" value="d">
+                            <input type="radio" name="q3" value="d">
                             <span class="radio-custom"></span>
                             <span class="option-text">120 arcs</span>
                         </label>
@@ -163,27 +155,27 @@
                     <div class="question-feedback"></div>
                 </div>
                 <!-- Question 4 -->
-                <div class="quiz-question-card" data-question="7">
-                    <div class="question-number">Question 7 <span class="required">*</span></div>
+                <div class="quiz-question-card" data-question="4">
+                    <div class="question-number">Question 4 <span class="required">*</span></div>
                     <p class="question-text">Quel col alpin stratégique était contrôlé par Aoste, menant vers la Gaule et la Germanie ?</p>
                     <div class="question-options">
                         <label class="option-label">
-                            <input type="radio" name="q7" value="a">
+                            <input type="radio" name="q4" value="a">
                             <span class="radio-custom"></span>
                             <span class="option-text">Le Col du Mont-Blanc</span>
                         </label>
                         <label class="option-label">
-                            <input type="radio" name="q7" value="b">
+                            <input type="radio" name="q4" value="b">
                             <span class="radio-custom"></span>
                             <span class="option-text">Le Col du Grand-Saint-Bernard</span>
                         </label>
                         <label class="option-label">
-                            <input type="radio" name="q7" value="c">
+                            <input type="radio" name="q4" value="c">
                             <span class="radio-custom"></span>
                             <span class="option-text">Le Col du Simplon</span>
                         </label>
                         <label class="option-label">
-                            <input type="radio" name="q7" value="d">
+                            <input type="radio" name="q4" value="d">
                             <span class="radio-custom"></span>
                             <span class="option-text">Le Col du Brenner</span>
                         </label>
@@ -191,27 +183,27 @@
                     <div class="question-feedback"></div>
                 </div>
                 <!-- Question 5 -->
-                <div class="quiz-question-card" data-question="8">
-                    <div class="question-number">Question 8 <span class="required">*</span></div>
+                <div class="quiz-question-card" data-question="5">
+                    <div class="question-number">Question 5 <span class="required">*</span></div>
                     <p class="question-text">Que trouve-t-on aujourd'hui dans l'arène de l'amphithéâtre ?</p>
                     <div class="question-options">
                         <label class="option-label">
-                            <input type="radio" name="q8" value="a">
+                            <input type="radio" name="q5" value="a">
                             <span class="radio-custom"></span>
                             <span class="option-text">Un parking souterrain</span>
                         </label>
                         <label class="option-label">
-                            <input type="radio" name="q8" value="b">
+                            <input type="radio" name="q5" value="b">
                             <span class="radio-custom"></span>
                             <span class="option-text">Un verger (frutteto)</span>
                         </label>
                         <label class="option-label">
-                            <input type="radio" name="q8" value="c">
+                            <input type="radio" name="q5" value="c">
                             <span class="radio-custom"></span>
                             <span class="option-text">Un musée</span>
                         </label>
                         <label class="option-label">
-                            <input type="radio" name="q8" value="d">
+                            <input type="radio" name="q5" value="d">
                             <span class="radio-custom"></span>
                             <span class="option-text">Un stade de football</span>
                         </label>
@@ -219,27 +211,27 @@
                     <div class="question-feedback"></div>
                 </div>
                 <!-- Question 6 -->
-                <div class="quiz-question-card" data-question="9">
-                    <div class="question-number">Question 9 <span class="required">*</span></div>
+                <div class="quiz-question-card" data-question="6">
+                    <div class="question-number">Question 6 <span class="required">*</span></div>
                     <p class="question-text">Combien d'arches de l'amphithéâtre sont encore visibles aujourd'hui ?</p>
                     <div class="question-options">
                         <label class="option-label">
-                            <input type="radio" name="q9" value="a">
+                            <input type="radio" name="q6" value="a">
                             <span class="radio-custom"></span>
                             <span class="option-text">2 arches</span>
                         </label>
                         <label class="option-label">
-                            <input type="radio" name="q9" value="b">
+                            <input type="radio" name="q6" value="b">
                             <span class="radio-custom"></span>
                             <span class="option-text">8 arches</span>
                         </label>
                         <label class="option-label">
-                            <input type="radio" name="q9" value="c">
+                            <input type="radio" name="q6" value="c">
                             <span class="radio-custom"></span>
                             <span class="option-text">20 arches</span>
                         </label>
                         <label class="option-label">
-                            <input type="radio" name="q9" value="d">
+                            <input type="radio" name="q6" value="d">
                             <span class="radio-custom"></span>
                             <span class="option-text">40 arches</span>
                         </label>
@@ -247,27 +239,27 @@
                     <div class="question-feedback"></div>
                 </div>
                 <!-- Question 7 -->
-                <div class="quiz-question-card" data-question="10">
-                    <div class="question-number">Question 10 <span class="required">*</span></div>
+                <div class="quiz-question-card" data-question="7">
+                    <div class="question-number">Question 7 <span class="required">*</span></div>
                     <p class="question-text">Quels types de spectacles avaient lieu dans l'amphithéâtre ?</p>
                     <div class="question-options">
                         <label class="option-label">
-                            <input type="radio" name="q10" value="a">
+                            <input type="radio" name="q7" value="a">
                             <span class="radio-custom"></span>
                             <span class="option-text">Des pièces de théâtre et des comédies</span>
                         </label>
                         <label class="option-label">
-                            <input type="radio" name="q10" value="b">
+                            <input type="radio" name="q7" value="b">
                             <span class="radio-custom"></span>
                             <span class="option-text">Des combats de gladiateurs (munera) et des chasses d'animaux (venationes)</span>
                         </label>
                         <label class="option-label">
-                            <input type="radio" name="q10" value="c">
+                            <input type="radio" name="q7" value="c">
                             <span class="radio-custom"></span>
                             <span class="option-text">Des courses de chars</span>
                         </label>
                         <label class="option-label">
-                            <input type="radio" name="q10" value="d">
+                            <input type="radio" name="q7" value="d">
                             <span class="radio-custom"></span>
                             <span class="option-text">Des cérémonies religieuses uniquement</span>
                         </label>
