@@ -14,6 +14,7 @@ function initNavigation() {
     const mobileBtn = document.getElementById('mobile-menu-btn');
     const navLinks = document.querySelector('.nav-links');
     const links = document.querySelectorAll('.nav-link');
+    if (!nav || !mobileBtn || !navLinks || links.length === 0) return;
     // Scroll effect
     window.addEventListener('scroll', () => {
         if (window.scrollY > 50) {
@@ -127,14 +128,15 @@ function initQuiz() {
     const submitBtn = document.getElementById('quiz-submit');
     const resetBtn = document.getElementById('quiz-reset');
     const resultsDiv = document.getElementById('quiz-results');
+    if (!form || !submitBtn || !resetBtn || !resultsDiv) return;
     // Correct answers
     const answers = {
         q1: 'b',   // Augusta Praetoria Salassorum
         q2: 'b',   // 25 av. J.-C.
-        q3: 'c',   // Les Salasses
-        q4: 'b',   // 15 000 spectateurs
+        q3: 'b',   // 60 arcs
+        q4: 'b',   // Col du Grand-Saint-Bernard
         q5: 'b',   // Le bardiglio
-        q6: 'b',   // 60 arcs
+        q6: 'b',   // 8 arches visibles aujourd'hui
         q7: 'b',   // Col du Grand-Saint-Bernard
         q8: 'b',   // Un verger
         q9: 'b',   // 8 arches
@@ -150,8 +152,8 @@ function initQuiz() {
     const explanations = {
         q1: 'La ville romaine d\'Aoste s\'appelait Augusta Praetoria Salassorum, fondée en l\'honneur de l\'empereur Auguste.',
         q2: 'La ville a été fondée en 25-24 av. J.-C. après la conquête des Salasses par le général Aulus Terentius Varro Murena.',
-        q3: 'Les Salasses (Salassi) étaient un peuple celte qui contrôlait les passages alpins stratégiques.',
-        q4: 'L\'amphithéâtre avait une capacité d\'environ 15 000 spectateurs — 5 fois la population de la ville !',
+        q3: 'La façade extérieure était composée de 60 arcs en plein cintre répartis sur deux niveaux.',
+        q4: 'Le Col du Grand-Saint-Bernard était le passage alpin stratégique contrôlé par Aoste pour rejoindre la Gaule et la Germanie.',
         q5: 'Le bardiglio est un marbre gris local extrait près de Villeneuve, un matériau unique dans le monde romain.',
         q6: '60 arcs en plein cintre formaient la façade extérieure sur deux niveaux.',
         q7: 'Le Col du Grand-Saint-Bernard (Alpis Poenina) menait vers la Gaule et la Germanie.',
